@@ -28,15 +28,6 @@ class CalendarYear {
         } else {
             ampm = "AM";
         }
-        // hours -= 8;
-        // String ampm;
-        // if (hours <= 0) {
-        // hours += 12;
-        // ampm = "PM";
-        // }
-        // else {
-        // ampm = "AM";
-        // }
         int i;
         if (yr % 4 == 0) {
             System.out.println("You were born on a leapyear!");
@@ -45,30 +36,55 @@ class CalendarYear {
         }
         System.out.printf("It is %02d:%02d:%02d %s currently.%n", hours, minutes, seconds, ampm);
         i = yr % 12;
-        if (i == 4) {
-            System.out.println("You are a rat!");
-        } else if (i == 5) {
-            System.out.println("You are an ox!");
-        } else if (i == 6) {
-            System.out.println("You are a tiger!");
-        } else if (i == 7) {
-            System.out.println("You are a rabbit!");
-        } else if (i == 8) {
-            System.out.println("You are a dragon!");
-        } else if (i == 9) {
-            System.out.println("You are a snake!");
-        } else if (i == 10) {
-            System.out.println("You are a horse!");
-        } else if (i == 11) {
-            System.out.println("You are a sheep!");
-        } else if (i == 0) {
-            System.out.println("You are a donkey!");
-        } else if (i == 1) {
-            System.out.println("You are a rooster!");
-        } else if (i == 2) {
-            System.out.println("You are a dog!");
-        } else if (i == 3) {
-            System.out.println("You are a pig!");
+        switch (i) {
+            case 0: {
+                System.out.println("You are a donkey!");
+                break;
+            }
+            case 1: {
+                System.out.println("You are a rooster!");
+                break;
+            }
+            case 2: {
+                System.out.println("You are a dog!");
+                break;
+            }
+            case 3: {
+                System.out.println("You are a pig!");
+                break;
+            }
+            case 4: {
+                System.out.println("You are a rat!");
+                break;
+            }
+            case 5: {
+                System.out.println("You are an ox!");
+                break;
+            }
+            case 6: {
+                System.out.println("You are a tiger!");
+                break;
+            }
+            case 7: {
+                System.out.println("You are a rabbit!");
+                break;
+            }
+            case 8: {
+                System.out.println("You are a dragon!");
+                break;
+            }
+            case 9: {
+                System.out.println("You are a snake!");
+                break;
+            }
+            case 10: {
+                System.out.println("You are a horse!");
+                break;
+            }
+            default: {
+                System.out.println("You are a sheep!");
+                break;
+            }
         }
     }
 }
